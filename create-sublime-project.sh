@@ -1,14 +1,12 @@
 #!/bin/bash
 
-set -eu
-
 USAGE="create-sublime-project.sh <directory> [dest]
 
 Creates a sublime-project and sublime-workspace file in current directory or in <dest>
 "
 
 if [ -z "$1" ]; then
-    echo $USAGE
+    echo "${USAGE}"
     exit 1
 fi
 
